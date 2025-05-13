@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Juliana Rocha</title>
+        <link rel="stylesheet" type="text/css" href="./CSS/portfolio.css">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="./Videos/Logo&Slogan.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Juliana Rocha</h1>
+            <strong>
+                <p class="center">
+                    <q>Code is my canvas, and I paint digital masterpieces. I bring ideas to life one line of code at a time.
+                        <br>When I’m not lost in the world of code, I’m probably thinking about the next big idea to bring to life.
+                    </q>
+                    <br> Hi, I’m Juliana Rocha — a Web & Software Developer passionate about building smart, scalable, and user-friendly digital solutions.
+                    <br>
+                    <br> Explore my portfolio to see how I bring ideas to life through technology.
+                </p>
+            </strong>
+        </div>
+
+        <!--About section-->
+        <div class="Row about-row" id="About">
+            <!--Left column-->
+            <div class="about-image">
+                <img src="./Images/Main_1.png" alt="Juliana engaged with technology">
+            </div>
+            <!--Right column-->
+            <div class="about-text">
+                <h1>About</h1>
+                <p>
+                    I am a software developer who loves to code! With a strong foundation in modern web technologies and software engineering principles, I specialize in crafting responsive websites, developing full-stack applications, and solving real-world problems through clean and efficient code. Whether it's creating dynamic front-end experiences or architecting robust back-end systems, I focus on delivering high-quality solutions tailored to user and business needs.
+
+                    Explore my portfolio to see how I bring ideas to life through technology. 
+                    <br>
+                    <br>As a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, I am trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
+                    <br>
+                </p>
+            </div>
+        </div>
+
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <br>
+                <p>
+                    Take a look at what I've been building on GitHub:   
+                </p>
+
+                    <p class="center"><a href="https://github.com/RavonnaRenslayer" target="_blank">RavonnaRenslayer</a>
+                    </p>
+
+                    <p class="center"><a href="https://github.com/RavonnaRenslayer/HTML-and-CSS.git" target="_blank">HTML-and-CSS</a>
+                    </p>
+
+                    <p class="center"><a href="https://github.com/RavonnaRenslayer/Python---Dummy.git" target="_blank">Python---Dummy</a>
+                    </p>
+
+                    <p class="center"><a href="https://github.com/the-tech-academy" target="_blank">The Tech Academy Github</a>
+                    </p>
+                    <p>Like what you see? Contact me to know more!</p>
+                    <p><a href="#Contact">Contact</a> me below!</p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/the-tech-academy" target="_blank"><img src="./Images/Github.jpeg" alt="GitHub Profile Picture"></a>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="./Images/Contact.jpeg" alt="Contact_Image">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
