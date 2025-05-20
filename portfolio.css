@@ -415,7 +415,7 @@ footer {
     height: 90vh;
     width: 100%;
     overflow: hidden;
-    background-image: url('./Images/Main_1.png');
+    background-image: url('Main_1.png');
     background-size: cover;
     background-position: center;
 }
@@ -424,7 +424,7 @@ footer {
   .about-row {
     height: 100vh;
     width: 100%;
-     background-image: url('./Images/Main_1.png');
+     background-image: url('Main_1.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -466,7 +466,7 @@ footer {
     width: 100%;
     bottom: 0;
     overflow: hidden;
-    background-image: url('./Images/Main_1.png');
+    background-image: url('Main_1.png');
     background-size: cover;
     background-position: center;
 }
@@ -480,7 +480,7 @@ footer {
     width: 100%;
     bottom: 0;
     overflow: hidden;
-    background-image: url('./Images/Main_1.png');
+    background-image: url('Main_1.png');
     background-size: cover;
     background-position: center;
 }
