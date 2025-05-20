@@ -16,6 +16,7 @@ h1 {
     text-align: center;
     margin-top: -2%;
     color: rgb(177, 5, 5);;
+    font-size: 40px;
 }
 
 h1:hover {
@@ -37,17 +38,63 @@ p:hover {
     transition: transform 1s;
 }
 
-.about-text {
+
+
+.about-paragraph p {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1024px),
+       screen and (max-width: 768px) {
+.about-paragraph p {
+    font-size: 17px;
+}
+}
+
+@media screen and (max-width: 1024px) {
+  .about-text {
     position: relative;
     z-index: 1;
-    width: 60%;
-    margin-left: 700px;
-    padding: 40px;
+    width: 100%;
+    margin-left: 400px;
+    margin-right: auto;   
+    padding: 10px;
     display: flex;
+    top: 40px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: right;
     box-sizing: border-box;
     color: white;
+    }
+}
+
+@media screen and (max-width: 1921px) {
+  .about-text {
+    position: relative;
+    z-index: 1;
+    margin-left: 1000px;
+    display: flex;
+    top: 100px;
+    flex-direction: column;
+    justify-content: right;
+    box-sizing: border-box;
+    color: white;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .about-text {
+    position: relative;
+    z-index: 1;
+    margin-left: 350px;
+    top: 50px;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: right;
+    box-sizing: border-box;
+    color: white;
+}
 }
 
 a {
@@ -63,6 +110,21 @@ q {
     color: #fff;
 }
 
+@media screen and (max-width: 768px) {
+    .white-text  {
+    margin-top: 12%;
+    }
+}
+
+@media screen and (max-width: 1921px) {
+    .white-text {
+        margin-top: 10%;
+        position: sticky;  /* This keeps it from scrolling */
+        left: 50%;
+        z-index: 10;     /* Ensure it's above other content */
+    }
+}
+
 .center {
     text-align: center;
 }
@@ -72,6 +134,13 @@ q {
     transition: transform 2s;
 }
 
+@media screen and (max-width: 1921px) {
+    .center p {
+        text-align: center;
+    }
+}
+
+
 /***** IMAGE STYLING *****/
 .about-image {
     position: absolute;
@@ -80,14 +149,14 @@ q {
     width: 100%;
     height: 100vh;
     background-color: #000;
-    z-index: 0;
+    z-index: -1;
 }
 
 .about-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 0;
+    z-index: -1;
 }
 
 img {
@@ -127,7 +196,8 @@ footer {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 1000;
+    padding: 14px 16px;
     animation: moveNav 5s;
     -webkit-animation: moveNav 5s;
     transform: translateX(0);
@@ -167,7 +237,7 @@ footer {
     to { top: 0; }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .Navbar a {
         width: 25%;
         font-size: 12px;
@@ -179,12 +249,17 @@ footer {
   }
 
   #About {
-    margin-top: 100px; /* Pushes section down */
+    padding-top: 100px; /* Pushes section down */
 }
 
-#Github {
-    scroll-margin-top: 80px;
-    min-height: 400px;
+@media screen and (max-width: 1024px) {
+  #About {
+    padding-top: 0;
+  }
+}
+
+#GitHub {
+  scroll-margin-top: 100px;
 }
 
 .Row {
@@ -194,8 +269,24 @@ footer {
 
 /***** VIDEO BACKGROUND STYLING *****/
 #Typing_Video {
-    position: fixed;
-    top: -18px;
+    position: absolute;
+    top: -100px;
+    bottom: 20px;
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    z-index: -1;
+    background-color: black;
+}
+
+@media screen and (max-width: 1024px) {
+    #Typing_Video {
+ position: absolute;
+    top: -100px;
     bottom: 20px;
     left: 0; 
     min-width: 100%;
@@ -207,8 +298,9 @@ footer {
     z-index: -1;
     background-color: black;
 }
+}
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     #Typing_Video {
         position: fixed;
         top: 0;
@@ -216,9 +308,21 @@ footer {
         min-width: 100%;
         min-height: 100%;
         width: auto;
-        height: auto;
+        height: 100vw;
         padding: 20px;
-        position: relative;
+        z-index: -2;
+    }
+}
+
+@media screen and (max-width: 1921px) {
+    #Typing_Video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 20%;
         z-index: -2;
     }
 }
@@ -234,6 +338,21 @@ footer {
     animation: moveVideoText 5.75s;
     -webkit-animation: moveVideoText 5.75s;
 }
+
+@media screen and (max-width: 768px) {
+    .Video_Text {
+    position: relative;
+    z-index: 10;
+    color: white;
+    object-position: top;
+    width: 100vw;
+    height: 50vh;
+    object-fit: fill;
+    text-shadow: 2px 2px 8px rgba(177, 5, 5);
+    animation: moveVideoText 5.75s;
+    -webkit-animation: moveVideoText 5.75s;
+    }
+}    
 
 .white-text {
     color:;
@@ -251,7 +370,7 @@ footer {
     padding: 10px;
     height: 400px;
 }
-
+    
 .Column_1 {
     padding-top: 3%;
     background-color: #f2f2f2;
@@ -271,12 +390,41 @@ footer {
 .about-row {
     position: relative;
     display: flex;
-    height: 450px;
+    height: 90vh;
     width: 100%;
     overflow: hidden;
     background-image: url('./Images/Main_1.png');
     background-size: cover;
     background-position: center;
+}
+
+@media screen and (max-width: 1024px) {
+.about-row {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    bottom: 0;
+    overflow: hidden;
+    background-image: url('./Images/Main_1.png');
+    background-size: cover;
+    background-position: center;
+}
+}
+
+
+@media screen and (max-width: 1921px) {
+.about-row {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    bottom: 0;
+    overflow: hidden;
+    background-image: url('./Images/Main_1.png');
+    background-size: cover;
+    background-position: center;
+}
 }
 
 .Row:after {
@@ -287,7 +435,7 @@ footer {
 
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .Column_1 {
         overflow: auto;
     }
